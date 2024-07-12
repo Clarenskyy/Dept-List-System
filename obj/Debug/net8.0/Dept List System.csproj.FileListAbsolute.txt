@@ -1,0 +1,14 @@
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\bin\Debug\net8.0\Dept List System.exe
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\bin\Debug\net8.0\Dept List System.deps.json
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\bin\Debug\net8.0\Dept List System.runtimeconfig.json
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\bin\Debug\net8.0\Dept List System.dll
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\bin\Debug\net8.0\Dept List System.pdb
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.AssemblyInfoInputs.cache
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.AssemblyInfo.cs
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.csproj.CoreCompileInputs.cache
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.dll
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\refint\Dept List System.dll
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.pdb
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\Dept List System.genruntimeconfig.cache
+C:\Users\Clarence\Desktop\Final Project OOP\Dept List System\obj\Debug\net8.0\ref\Dept List System.dll
