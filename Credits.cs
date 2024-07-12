@@ -84,9 +84,9 @@ namespace Dept_List_System
                 Debt001.Add("surf", 6.50);
                 Debt001.Add("cash", 1000);
             }
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             Console.WriteLine($"* {SelectedDebtor} Credit List **");
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             double totalPrice = 0;
 
             if (Debt001.Count == 0 && balance > 0)
@@ -106,7 +106,7 @@ namespace Dept_List_System
                     Console.WriteLine($"{item.Key} - P{item.Value:0.00}");
                 }
 
-                Console.WriteLine("--------------------");
+                Console.WriteLine("------------------------------------------------------------");
                 if (balance > 0)
                 {
                     Console.WriteLine($"Balance: {balance}");
@@ -116,7 +116,7 @@ namespace Dept_List_System
                 Console.WriteLine($"Total: P{totalPrice:0.00}");
             }
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             return (loopcounterr, totalPrice);
         }
         public static (double, double) DeptDisplayer2(double loopcounterr, string SelectedDebtor)
@@ -129,9 +129,9 @@ namespace Dept_List_System
                 Debt002.Add("surf", 39.00);
                 Debt002.Add("cash", 2500);
             }
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             Console.WriteLine($"* {SelectedDebtor} Credit List **");
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             double totalPrice = 0;
 
             if (Debt002.Count == 0 && balance1 > 0)
@@ -151,7 +151,7 @@ namespace Dept_List_System
                     Console.WriteLine($"{item.Key} - P{item.Value:0.00}");
                 }
 
-                Console.WriteLine("--------------------");
+                Console.WriteLine("------------------------------------------------------------");
                 totalPrice = Debt002.Sum(item => item.Value) + balance1;
                 if (balance1 > 0)
                 {
@@ -161,7 +161,7 @@ namespace Dept_List_System
                 
             }
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             return (loopcounterr, totalPrice);
         }
         public static (double, double) DeptDisplayer3(double loopcounterr, string SelectedDebtor)
@@ -174,9 +174,9 @@ namespace Dept_List_System
                 Debt003.Add("surf", 6.50);
                 Debt003.Add("load", 105);
             }
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             Console.WriteLine($"* {SelectedDebtor} Credit List **");
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             double totalPrice = 0;
 
             if (Debt003.Count == 0 && balance2 > 0)
@@ -196,7 +196,7 @@ namespace Dept_List_System
                     Console.WriteLine($"{item.Key} - P{item.Value:0.00}");
                 }
 
-                Console.WriteLine("--------------------");
+                Console.WriteLine("------------------------------------------------------------");
                 totalPrice = Debt003.Sum(item => item.Value) + balance2;
                 if (balance2 > 0)
                 {
@@ -206,15 +206,15 @@ namespace Dept_List_System
                 
             }
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             return (loopcounterr, totalPrice);
         }
         public static (double, double) DeptDisplayer4(double loopcounterr, string SelectedDebtor)
         {
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             Console.WriteLine($"* {SelectedDebtor} Credit List **");
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             double totalPrice = 0;
 
             if (Debt004.Count == 0 && balance3 > 0)
@@ -234,7 +234,7 @@ namespace Dept_List_System
                     Console.WriteLine($"{item.Key} - P{item.Value:0.00}");
                 }
 
-                Console.WriteLine("--------------------");
+                Console.WriteLine("------------------------------------------------------------");
                 totalPrice = Debt004.Sum(item => item.Value) + balance3;
                 if (balance3 > 0)
                 {
@@ -244,15 +244,15 @@ namespace Dept_List_System
                 
             }
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             return (loopcounterr, totalPrice);
         }
         public static (double, double) DeptDisplayer5(double loopcounterr, string SelectedDebtor)
         {
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             Console.WriteLine($"* {SelectedDebtor} Credit List **");
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             double totalPrice = 0;
 
             if (Debt005.Count == 0 && balance4 > 0)
@@ -272,7 +272,7 @@ namespace Dept_List_System
                     Console.WriteLine($"{item.Key} - P{item.Value:0.00}");
                 }
 
-                Console.WriteLine("--------------------");
+                Console.WriteLine("------------------------------------------------------------");
                 totalPrice = Debt005.Sum(item => item.Value) + balance4;
                 if (balance4 > 0)
                 {
@@ -282,12 +282,12 @@ namespace Dept_List_System
                 
             }
 
-            Console.WriteLine("====================");
+            Console.WriteLine("============================================================");
             return (loopcounterr, totalPrice);
         }
         public static int CreditAdder1(int LooEpExitor, double totalPrice)
         {
-            Console.WriteLine("\n[ADD CREDIT (0)]       [PAY CREDIT (1)]    [EXIT (2)]");
+            Console.WriteLine("\n[ADD CREDIT (0)]    [PAY CREDIT (1)]    [EXIT (2)]");
             Console.Write("choice: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -297,14 +297,17 @@ namespace Dept_List_System
                     while (true)
                     {
                         Console.Write("Product Name: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         string productName = Console.ReadLine();
+                        Console.ResetColor();
                         if (Debt001.ContainsKey(productName))
                         {
                             productName = productName + " ";
                         }
                         Console.Write("Price: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         double productPrice = Convert.ToDouble(Console.ReadLine());
-
+                        Console.ResetColor();
                         Debt001.Add(productName, productPrice);
                         Console.Clear();
                         break;
@@ -342,7 +345,7 @@ namespace Dept_List_System
         }
         public static int CreditAdder2(int LooEpExitor, double totalPrice)
         {
-            Console.WriteLine("[Add a credit (0)]       [pay credit (1)]    [exit (2)]");
+            Console.WriteLine("[Add a credit (0)]    [pay credit (1)]    [exit (2)]");
             Console.Write("choice: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -353,13 +356,17 @@ namespace Dept_List_System
                     {
                         Console.WriteLine("Make sure that the product name is unique");
                         Console.Write("Product Name: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         string productName = Console.ReadLine();
+                        Console.ResetColor();
                         if (Debt002.ContainsKey(productName))
                         {
                             productName = productName + " ";
                         }
                         Console.Write("Price: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         double productPrice = Convert.ToDouble(Console.ReadLine());
+                        Console.ResetColor();
 
                         Debt002.Add(productName, productPrice);
                         Console.Clear();
@@ -399,7 +406,7 @@ namespace Dept_List_System
         }
         public static int CreditAdder3(int LooEpExitor, double totalPrice)
         {
-            Console.WriteLine("[Add a credit (0)]       [pay credit (1)]    [exit (2)]");
+            Console.WriteLine("[Add a credit (0)]    [pay credit (1)]    [exit (2)]");
             Console.Write("choice: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -410,13 +417,17 @@ namespace Dept_List_System
                     {
                         Console.WriteLine("Make sure that the product name is unique");
                         Console.Write("Product Name: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         string productName = Console.ReadLine();
+                        Console.ResetColor();
                         if (Debt003.ContainsKey(productName))
                         {
                             productName = productName + " ";
                         }
                         Console.Write("Price: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         double productPrice = Convert.ToDouble(Console.ReadLine());
+                        Console.ResetColor();
 
                         Debt003.Add(productName, productPrice);
                         Console.Clear();
@@ -455,7 +466,7 @@ namespace Dept_List_System
         }
         public static int CreditAdder4(int LooEpExitor, double totalPrice)
         {
-            Console.WriteLine("[Add a credit (0)]       [pay credit (1)]    [exit (2)]");
+            Console.WriteLine("[Add a credit (0)]    [pay credit (1)]    [exit (2)]");
             Console.Write("choice: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -466,13 +477,17 @@ namespace Dept_List_System
                     {
                         Console.WriteLine("Make sure that the product name is unique");
                         Console.Write("Product Name: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         string productName = Console.ReadLine();
+                        Console.ResetColor();
                         if (Debt004.ContainsKey(productName))
                         {
                             productName = productName + " ";
                         }
                         Console.Write("Price: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         double productPrice = Convert.ToDouble(Console.ReadLine());
+                        Console.ResetColor();
 
                         Debt004.Add(productName, productPrice);
                         Console.Clear();
@@ -512,7 +527,7 @@ namespace Dept_List_System
         }
         public static int CreditAdder5(int LooEpExitor, double totalPrice)
         {
-            Console.WriteLine("[Add a credit (0)]       [pay credit (1)]    [exit (2)]");
+            Console.WriteLine("[Add a credit (0)]    [pay credit (1)]    [exit (2)]");
             Console.Write("choice: ");
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -523,13 +538,17 @@ namespace Dept_List_System
                     {
                         Console.WriteLine("Make sure that the product name is unique");
                         Console.Write("Product Name: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         string productName = Console.ReadLine();
+                        Console.ResetColor();
                         if (Debt005.ContainsKey(productName))
                         {
                             productName = productName + " ";
                         }
                         Console.Write("Price: ");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         double productPrice = Convert.ToDouble(Console.ReadLine());
+                        Console.ResetColor();
 
                         Debt005.Add(productName, productPrice);
                         Console.Clear();
