@@ -27,10 +27,13 @@ namespace Dept_List_System
                 int loopExiter = 0;
                 Console.Clear();
 
-                Console.Write("WELCOME TO DEBT LIST SYSTEM!" +
-                "\n1. SEE LIST OF DEBTOR" +
-                "\n2. LOGOUT" +
-                "\nChoice (1-2): ");
+                Console.Write("**WELCOME TO DEBT LIST SYSTEM!**" +
+                              "\n|-----------------------------|" +
+                              "\n| 1 | SEE LIST OF DEBTOR      |" +
+                              "\n|-----------------------------|" +
+                              "\n| 2 | LOGOUT                  |" +
+                              "\n|-----------------------------|" +
+                              "\n\tChoice (1-2): ");
                 string choice = Console.ReadLine();
                 loopExiter = SecondMenuInterface(choice);
                 if (loopExiter != 0)
@@ -79,15 +82,17 @@ namespace Dept_List_System
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             UIDelay();
-            Console.WriteLine("DEPT LIST SYSTEM");
+            Console.WriteLine("DEPT LIST SYSTEM\n");
 
             int numlist = 1;
 
             //Display the list of debtor names
-            Console.WriteLine("LIST OF DEBTORS:");
+            Console.WriteLine("         LIST OF DEBTORS:" +
+                              "\n**-------------------------------**");
             foreach (var name in debtorNames)
             {
-                Console.WriteLine($"{name} ID: 00{numlist} ");
+                Console.WriteLine($"| {numlist} | {name}      " +
+                              "\n**-------------------------------**");
                 numlist++;
             }
             //Console.ResetColor();
