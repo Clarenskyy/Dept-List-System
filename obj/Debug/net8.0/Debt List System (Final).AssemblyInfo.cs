@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Debt List System (Final)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+258e58bb563827b6c3db69d584659d696baa940d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Debt List System (Final)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Debt List System (Final)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
