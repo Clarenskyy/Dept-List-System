@@ -16,10 +16,11 @@ namespace Dept_List_System
         }
         public static (string, string) getPassword()
         {
-            Console.Write("Username: ");
+            Console.WriteLine("**-----------------------------**");
+            Console.Write("\tUsername: ");
             string enteredUsername = Console.ReadLine();
 
-            Console.Write("Password: ");
+            Console.Write("\tPassword: ");
             string enteredPassword = Console.ReadLine();
 
             return (enteredUsername, enteredPassword);
@@ -44,20 +45,20 @@ namespace Dept_List_System
                     // Compare entered password with stored password
                     if (enteredPassword == storedPassword)
                     {
-                        Console.WriteLine("Login successful!");
+                        Console.WriteLine("\tLogin successful!");
                         validationValue = 1;
                         break;
                     }
                     else
                     {
-                        Console.WriteLine("Invalid password.");
+                        Console.WriteLine("\tInvalid password.");
                         validationValue = 0;
                         limit++;
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Invalid username.");
+                    Console.WriteLine("\tInvalid username.");
                     validationValue = 0;
                     limit++;
                 }
@@ -65,10 +66,9 @@ namespace Dept_List_System
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("+-----------------------------+\r\n|        Code by: Klay        |\r\n+-----------------------------+");
                 Console.ResetColor();
-                Console.WriteLine("** WELCOME TO DEBT LIST SYSTEM **\n");
-                Console.WriteLine("LOGIN TO PROCEED\n");
+                Console.WriteLine("** WELCOME TO DEBT LIST SYSTEM **");
+                Console.WriteLine("       LOGIN TO PROCEED\n");
                 Console.WriteLine(DisplayAttemptLeft(limit));
-                Console.WriteLine("====================");
 
             }
             return validationValue;
@@ -79,11 +79,11 @@ namespace Dept_List_System
                 string message = "";
                 if (limit < 4)
                 {
-                    message = $"{limit}/3 attemps left.";
+                    message = $"\t{limit}/3 attemps left.";
                 }
                 else
                 {
-                    message = $"Login Void, Too many attempts.";
+                    message = $"\tLogin Void, Too many attempts.";
                 }
                 return message;
             }
