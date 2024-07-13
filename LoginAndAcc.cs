@@ -11,11 +11,13 @@ namespace Dept_List_System
         static Dictionary<string, string> users = new Dictionary<string, string>();
         private static void Usernames()
         {
+            //declares user
             users.Add("Clarensky", "11111111");
             users.Add("Renzky", "11111111");
         }
         public static (string, string) getPassword()
         {
+            //ask info or input on the user
             Console.WriteLine("**-----------------------------**");
             Console.Write("\tUsername: ");
             string enteredUsername = Console.ReadLine();
